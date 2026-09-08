@@ -1,0 +1,34 @@
+# Images and labels directory should be relative to train.py
+
+TRAIN_DIR_IMAGES: 'data_folder/KITTI_detrprojectversion/train/images'
+TRAIN_DIR_LABELS: 'data_folder/KITTI_detrprojectversion/train/annotations'
+
+VALID_DIR_IMAGES: 'data_folder/KITTI_detrprojectversion/valid/images'
+VALID_DIR_LABELS: 'data_folder/KITTI_detrprojectversion/valid/annotations'
+
+
+# Class names.
+# KITTI Ultralytics official classes
+# + background for Faster R-CNN / DETR style loader
+
+CLASSES: [
+    '__background__',
+    "car",
+    "van",
+    "truck",
+    "pedestrian",
+    "Person_sitting",
+    "cyclist",
+    "tram",
+    "misc"
+]
+
+
+# Number of classes (object classes + 1 background)
+
+NC: 9
+
+
+# Whether to save the predictions of the validation set while training.
+
+SAVE_VALID_PREDICTION_IMAGES: False
